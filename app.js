@@ -81,7 +81,7 @@ const Folder = ({ name, contents }) => {
             item.type === 'file' ? (
               <File key={item.name} name={item.name} />
             ) : (
-              <Folder key={item.name} name={item.name} contents={item.contents} />
+              <Folder key={item.name} name={item.name} contents={item.children} />
             )
           )}
         </div>
